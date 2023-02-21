@@ -11,6 +11,7 @@
         href="https://mdbootstrap.com/wp-content/themes/mdbootstrap4/css/mdb-plugins-gathered.min.css"> -->
     <link href="css/bootstrap4_4_1.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
     <script type="text/javascript" src="js/jquery3_2_1.js"></script>
     <style type="text/css">
         /* Chart.js */
@@ -204,6 +205,167 @@
             margin-top: 0px;
             margin-bottom: 30px;
         }
+
+        @media only screen and (max-width: 992px) {
+            .container-fluid {
+                display: flex;
+            }
+
+            #progressbar {
+                flex-direction: column-reverse;
+                height: 93%;
+                justify-content: space-between;
+            }
+        }
+
+        @media only screen and (min-width: 992px) {
+            .top {
+                display: flex;
+            }
+
+
+        }
+
+
+        @media only screen and (max-width: 992px) {
+
+
+            #progressbar li:after {
+                content: '';
+                width: 14;
+                height: 170px;
+                background: #C5CAE9;
+                position: absolute;
+                left: 0;
+                top: 16px;
+                z-index: -1;
+                margin-left: 18px;
+            }
+
+
+        }
+
+        /* body {
+            background-color: #f5f7fa;
+            margin-top: 20px;
+        }
+
+        .card {
+            margin-bottom: 24px;
+            -webkit-box-shadow: 0 2px 4px rgb(126 142 177 / 10%);
+            box-shadow: 0 2px 4px rgb(126 142 177 / 10%);
+        }
+
+        .card {
+            position: relative;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            min-width: 0;
+            word-wrap: break-word;
+            background-color: #fff;
+            background-clip: border-box;
+            border: 0 solid #eaedf1;
+            border-radius: .25rem;
+        }
+
+        .activity-wid {
+            margin-left: 16px;
+        }
+
+        .mb-0 {
+            margin-bottom: 0 !important;
+        }
+
+        .list-unstyled {
+            padding-left: 0;
+            list-style: none;
+        }
+
+        .activity-wid .activity-list {
+            position: relative;
+            padding: 0 0 33px 30px;
+        }
+
+        .activity-border:before {
+            content: "";
+            position: absolute;
+            height: 38px;
+            border-left: 3px dashed #eaedf1;
+            top: 40px;
+            left: 0;
+        }
+
+        .activity-wid .activity-list .activity-icon {
+            position: absolute;
+            left: -20px;
+            top: 0;
+            z-index: 2;
+        }
+
+        .avatar-sm {
+            height: 2.5rem;
+            width: 2.5rem;
+        }
+
+        .media {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: start;
+            -ms-flex-align: start;
+            align-items: flex-start;
+        }
+
+        .me-3 {
+            margin-right: 1rem !important;
+        }
+
+        .font-size-15 {
+            font-size: 15px !important;
+        }
+
+        .font-size-14 {
+            font-size: 14px !important;
+        }
+
+        .text-muted {
+            color: #74788d !important;
+        }
+
+        .text-end {
+            text-align: right !important;
+        }
+
+        .font-size-13 {
+            font-size: 13px !important;
+        }
+
+        .avatar-title {
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            height: 100%;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .bg-soft-primary {
+            background-color: rgba(82, 92, 229, .25) !important;
+        }
+
+        .bg-soft-success {
+            background-color: rgba(35, 197, 143, .25) !important;
+        } */
     </style>
 </head>
 
@@ -259,26 +421,26 @@
                     </div>
                 </div>
                 <div class="card-body">
-                    <div class="container-fluid">
+                    <div class="container-fluid" style="justify-content: space-evenly;">
                         <div class="row d-flex justify-content-center">
                             <div class="col-12">
-                                <ul id="progressbar" class="text-center d-flex">
-                                    <li class="step0"></li>
-                                    <li class="step0"></li>
-                                    <li class="step0"></li>
-                                    <li class="step0"></li>
-                                    <li class="step0"></li>
-                                    <li class="step0"></li>
-                                    <li class="step0"></li>
-                                    <li class="step0"></li>
-                                    <li class="active step0"></li>
-                                    <li class="active step0"></li>
-                                    <li class="active step0"></li>
+                                <ul id="progressbar" class="text-center d-flex ">
+                                    <li class="step0 "></li>
+                                    <li class="step0 "></li>
+                                    <li class="step0 "></li>
+                                    <li class="step0 "></li>
+                                    <li class="step0 "></li>
+                                    <li class="step0 "></li>
+                                    <li class="step0 "></li>
+                                    <li class="step0 "></li>
+                                    <li class="active step0 "></li>
+                                    <li class="active step0 "></li>
+                                    <li class="active step0 "></li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-12 col-md-12 col-sm-12 col-lg-12 col-xs-12">
-                            <div class="flex-flow row justify-content-between top flex-row-reverse"
+                        <div>
+                            <div class="flex-flow  justify-content-between top flex-row-reverse"
                                 style="text-align: center;font-size: 12px;">
                                 <div class="row d-flex icon-content"> <img class="icon" src="imags/9nnc9Et.png">
                                     <div class="d-flex flex-column">
@@ -290,8 +452,7 @@
                                         <p class="font-weight-bold">تایید<br>دریافت فایل</p>
                                     </div>
                                 </div>
-                                <div class="row d-flex icon-content" style="max-width: 69px;"> <img class="icon"
-                                        src="imags/u1AzR7w.png">
+                                <div class="row d-flex icon-content"> <img class="icon" src="imags/u1AzR7w.png">
                                     <div class="d-flex flex-column">
                                         <p class="font-weight-bold">تایید<br>متن و طرح جلد و مدارک</p>
                                     </div>
@@ -561,6 +722,288 @@
     <script type="text/javascript" src="js/mdb-plugins-gathered.js"></script>
 
     <div class="hiddendiv common"></div>
+    <hr>
+    <hr>
+
+    <!-- <div>
+        <div class="col-xl-4">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="header-title mb-4" style="display: flex;justify-content: end;">پیگیری سفارش</h4>
+                    <ul class="list-unstyled activity-wid mb-0">
+                        <li class="activity-list activity-border">
+                            <div class="activity-icon avatar-sm">
+                                <img class="icon avatar-sm rounded-circle" src="imags/9nnc9Et.png">
+                            </div>
+                            <div class="media">
+                                <div class="me-3">
+                                    <h5 class="font-size-15 mb-1">سفارش چاپ شد</h5>
+                                    <p class="text-muted font-size-14 mb-0">James Raphael</p>
+                                </div>
+
+                                <div class="media-body">
+                                    <div class="text-end d-none d-md-block">
+                                        <p class="text-muted font-size-13 mt-2 pt-1 mb-0"><i
+                                                class="fa fa-calendar font-size-15 text-primary"></i>
+                                            3 days</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li class="activity-list activity-border">
+                            <div class="activity-icon avatar-sm">
+                                <span class="avatar-title bg-soft-primary text-primary rounded-circle">
+                                    <i class="font-size-16">
+                                        <img class="icon avatar-sm rounded-circle" src="imags/GiWFtVu.png">
+                                    </i>
+                                </span>
+                            </div>
+                            <div class="media">
+                                <div class="me-3">
+                                    <h5 class="font-size-15 mb-1">تایید دریافت فایل</h5>
+                                    <p class="text-muted font-size-14 mb-0">America</p>
+                                </div>
+
+                                <div class="media-body">
+                                    <div class="text-end d-none d-md-block">
+                                        <p class="text-muted font-size-13 mt-2 pt-1 mb-0"><i
+                                                class="fa fa-calendar font-size-15 text-primary"></i>
+                                            1 days</p>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </li>
+                        <li class="activity-list activity-border">
+                            <div class="activity-icon avatar-sm">
+                                <span class="avatar-title bg-soft-primary text-primary rounded-circle">
+                                    <i class="font-size-16">
+                                        <img class="icon avatar-sm rounded-circle" src="imags/GiWFtVu.png">
+                                    </i>
+                                </span>
+                            </div>
+                            <div class="media">
+                                <div class="me-3">
+                                    <h5 class="font-size-15 mb-1">تایید متن و طرح جلد و مدارک</h5>
+                                    <p class="text-muted font-size-14 mb-0">America</p>
+                                </div>
+
+                                <div class="media-body">
+                                    <div class="text-end d-none d-md-block">
+                                        <p class="text-muted font-size-13 mt-2 pt-1 mb-0"><i
+                                                class="fa fa-calendar font-size-15 text-primary"></i>
+                                            1 days</p>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </li>
+                        <li class="activity-list activity-border">
+                            <div class="activity-icon avatar-sm">
+                                <span class="avatar-title bg-soft-primary text-primary rounded-circle">
+                                    <i class="font-size-16">
+                                        <img class="icon avatar-sm rounded-circle" src="imags/GiWFtVu.png">
+                                    </i>
+                                </span>
+                            </div>
+                            <div class="media">
+                                <div class="me-3">
+                                    <h5 class="font-size-15 mb-1">ویراستاری</h5>
+                                    <p class="text-muted font-size-14 mb-0">America</p>
+                                </div>
+
+                                <div class="media-body">
+                                    <div class="text-end d-none d-md-block">
+                                        <p class="text-muted font-size-13 mt-2 pt-1 mb-0"><i
+                                                class="fa fa-calendar font-size-15 text-primary"></i>
+                                            1 days</p>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </li>
+                        <li class="activity-list activity-border">
+                            <div class="activity-icon avatar-sm">
+                                <span class="avatar-title bg-soft-primary text-primary rounded-circle">
+                                    <i class="font-size-16">
+                                        <img class="icon avatar-sm rounded-circle" src="imags/GiWFtVu.png">
+                                    </i>
+                                </span>
+                            </div>
+                            <div class="media">
+                                <div class="me-3">
+                                    <h5 class="font-size-15 mb-1">صفحه آرایی</h5>
+                                    <p class="text-muted font-size-14 mb-0">America</p>
+                                </div>
+
+                                <div class="media-body">
+                                    <div class="text-end d-none d-md-block">
+                                        <p class="text-muted font-size-13 mt-2 pt-1 mb-0"><i
+                                                class="fa fa-calendar font-size-15 text-primary"></i>
+                                            1 days</p>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </li>
+
+                        <li class="activity-list activity-border">
+                            <div class="activity-icon avatar-sm">
+                                <span class="avatar-title bg-soft-primary text-primary rounded-circle">
+                                    <i class="font-size-16">
+                                        <img class="icon avatar-sm rounded-circle" src="imags/GiWFtVu.png">
+                                    </i>
+                                </span>
+                            </div>
+                            <div class="media">
+                                <div class="me-3">
+                                    <h5 class="font-size-15 mb-1">اخذ مجوز</h5>
+                                    <p class="text-muted font-size-14 mb-0">America</p>
+                                </div>
+
+                                <div class="media-body">
+                                    <div class="text-end d-none d-md-block">
+                                        <p class="text-muted font-size-13 mt-2 pt-1 mb-0"><i
+                                                class="fa fa-calendar font-size-15 text-primary"></i>
+                                            1 days</p>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </li>
+
+                        <li class="activity-list activity-border">
+                            <div class="activity-icon avatar-sm">
+                                <span class="avatar-title bg-soft-success text-success rounded-circle">
+                                    <i class="font-size-16">
+                                        <img class="icon avatar-sm rounded-circle" src="imags/u1AzR7w.png">
+                                    </i>
+                                </span>
+                            </div>
+                            <div class="media">
+                                <div class="me-3">
+                                    <h5 class="font-size-15 mb-1">تایید مولف</h5>
+                                    <p class="text-muted font-size-14 mb-0">Thank You</p>
+                                </div>
+
+                                <div class="media-body">
+                                    <div class="text-end d-none d-md-block">
+                                        <p class="text-muted font-size-13 mt-2 pt-1 mb-0"><i
+                                                class="fa fa-calendar font-size-15 text-primary"></i>
+                                            Today</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li class="activity-list activity-border">
+                            <div class="activity-icon avatar-sm">
+                                <span class="avatar-title bg-soft-success text-success rounded-circle">
+                                    <i class="font-size-16">
+                                        <img class="icon avatar-sm rounded-circle" src="imags/TkPm63y.png">
+                                    </i>
+                                </span>
+                            </div>
+                            <div class="media">
+                                <div class="me-3">
+                                    <h5 class="font-size-15 mb-1">چاپ</h5>
+                                    <p class="text-muted font-size-14 mb-0">Thank You</p>
+                                </div>
+
+                                <div class="media-body">
+                                    <div class="text-end d-none d-md-block">
+                                        <p class="text-muted font-size-13 mt-2 pt-1 mb-0"><i
+                                                class="fa fa-calendar font-size-15 text-primary"></i>
+                                            Today</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li class="activity-list activity-border">
+                            <div class="activity-icon avatar-sm">
+
+                                <img src="imags/HdsziHP.png" class="avatar-sm rounded-circle" alt="">
+
+                            </div>
+                            <div class="media">
+                                <div class="me-3">
+                                    <h5 class="font-size-15 mb-1">بسته بندی</h5>
+                                    <p class="text-muted font-size-14 mb-0">James Raphael</p>
+                                </div>
+
+                                <div class="media-body">
+                                    <div class="text-end d-none d-md-block">
+                                        <p class="text-muted font-size-13 mt-2 pt-1 mb-0"><i
+                                                class="fa fa-calendar font-size-15 text-primary"></i>
+                                            3 days</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li class="activity-list activity-border">
+                            <div class="activity-icon avatar-sm">
+                                <span class="avatar-title bg-soft-primary text-primary rounded-circle">
+                                    <i class="fa fa-shopping-cart font-size-16"></i>
+                                </span>
+                            </div>
+                            <div class="media">
+                                <div class="me-3">
+                                    <h5 class="font-size-15 mb-1">آماده سازی</h5>
+                                    <p class="text-muted font-size-14 mb-0">Dubai</p>
+                                </div>
+
+                                <div class="media-body">
+                                    <div class="text-end d-none d-md-block">
+                                        <p class="text-muted font-size-13 mt-2 pt-1 mb-0"><i
+                                                class="fa fa-calendar font-size-15 text-primary"></i>
+                                            1 days</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li class="activity-list">
+                            <div class="activity-icon avatar-sm">
+                                <span class="avatar-title bg-soft-success text-success rounded-circle">
+                                    <i class="fa fa-user font-size-16"></i>
+                                </span>
+                            </div>
+                            <div class="media">
+                                <div class="me-3">
+                                    <h5 class="font-size-15 mb-1">رسید پست</h5>
+                                    <p class="text-muted font-size-14 mb-0">Thank You</p>
+                                </div>
+
+                                <div class="media-body">
+                                    <div class="text-end d-none d-md-block">
+                                        <p class="text-muted font-size-13 mt-2 pt-1 mb-0"><i
+                                                class="fa fa-calendar font-size-15 text-primary"></i>
+                                            Today</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+
+
+
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div> -->
 
 
 </body>
@@ -575,5 +1018,4 @@
         content.style.display = content.style.display === 'block' ? 'none' : 'block';
         button.innerHTML = content.style.display === 'block' ? '' : '';
     });
-
 </script>
